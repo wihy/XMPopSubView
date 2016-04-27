@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XMTestNormalView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+
+-(IBAction)showNormalPopView:(id)sender{
+    XMTestNormalView *autoHeightView = [[XMTestNormalView alloc] initWithController:self title:@"高度固定视图"];
+    autoHeightView.backgroundColor = [UIColor blueColor];
+    autoHeightView.frame = CGRectMake(0, 0, self.view.frame.size.width, 300);
+    [autoHeightView showWithAnimate:YES];
+}
+
+
+-(IBAction)showAutoHeightPopView:(id)sender{
+    
+    XMTestNormalView *autoHeightView = [[XMTestNormalView alloc] initWithController:self title:@"高度自适应视图"];
+    autoHeightView.backgroundColor = [UIColor redColor];
+    autoHeightView.autoSizeWithSubFrame = YES;
+    autoHeightView.frame = CGRectMake(0, 0, self.view.frame.size.width, arc4random() % 300);
+    [autoHeightView showWithAnimate:YES];
 }
 
 - (void)didReceiveMemoryWarning {

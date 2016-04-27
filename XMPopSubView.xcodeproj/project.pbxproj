@@ -15,6 +15,12 @@
 		25073B431CD051CB008BEE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25073B411CD051CB008BEE24 /* LaunchScreen.storyboard */; };
 		25073B4E1CD051CB008BEE24 /* XMPopSubViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B4D1CD051CB008BEE24 /* XMPopSubViewTests.m */; };
 		25073B591CD051CB008BEE24 /* XMPopSubViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B581CD051CB008BEE24 /* XMPopSubViewUITests.m */; };
+		25073B761CD05348008BEE24 /* sr_bg_mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25073B6D1CD05348008BEE24 /* sr_bg_mask@2x.png */; };
+		25073B771CD05348008BEE24 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B6F1CD05348008BEE24 /* UIView+Frame.m */; };
+		25073B781CD05348008BEE24 /* XMBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B711CD05348008BEE24 /* XMBlurView.m */; };
+		25073B791CD05348008BEE24 /* XMPopSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B731CD05348008BEE24 /* XMPopSubview.m */; };
+		25073B7A1CD05348008BEE24 /* XMPopViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B751CD05348008BEE24 /* XMPopViewContainer.m */; };
+		25073B7D1CD06278008BEE24 /* XMTestNormalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B7C1CD06278008BEE24 /* XMTestNormalView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,17 @@
 		25073B541CD051CB008BEE24 /* XMPopSubViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMPopSubViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25073B581CD051CB008BEE24 /* XMPopSubViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMPopSubViewUITests.m; sourceTree = "<group>"; };
 		25073B5A1CD051CB008BEE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25073B6D1CD05348008BEE24 /* sr_bg_mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sr_bg_mask@2x.png"; sourceTree = "<group>"; };
+		25073B6E1CD05348008BEE24 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		25073B6F1CD05348008BEE24 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		25073B701CD05348008BEE24 /* XMBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMBlurView.h; sourceTree = "<group>"; };
+		25073B711CD05348008BEE24 /* XMBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMBlurView.m; sourceTree = "<group>"; };
+		25073B721CD05348008BEE24 /* XMPopSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPopSubview.h; sourceTree = "<group>"; };
+		25073B731CD05348008BEE24 /* XMPopSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPopSubview.m; sourceTree = "<group>"; };
+		25073B741CD05348008BEE24 /* XMPopViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPopViewContainer.h; sourceTree = "<group>"; };
+		25073B751CD05348008BEE24 /* XMPopViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPopViewContainer.m; sourceTree = "<group>"; };
+		25073B7B1CD06278008BEE24 /* XMTestNormalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestNormalView.h; sourceTree = "<group>"; };
+		25073B7C1CD06278008BEE24 /* XMTestNormalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestNormalView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +118,7 @@
 		25073B321CD051CB008BEE24 /* XMPopSubView */ = {
 			isa = PBXGroup;
 			children = (
+				25073B6C1CD05348008BEE24 /* XMPopView */,
 				25073B361CD051CB008BEE24 /* AppDelegate.h */,
 				25073B371CD051CB008BEE24 /* AppDelegate.m */,
 				25073B391CD051CB008BEE24 /* ViewController.h */,
@@ -110,6 +128,8 @@
 				25073B411CD051CB008BEE24 /* LaunchScreen.storyboard */,
 				25073B441CD051CB008BEE24 /* Info.plist */,
 				25073B331CD051CB008BEE24 /* Supporting Files */,
+				25073B7B1CD06278008BEE24 /* XMTestNormalView.h */,
+				25073B7C1CD06278008BEE24 /* XMTestNormalView.m */,
 			);
 			path = XMPopSubView;
 			sourceTree = "<group>";
@@ -138,6 +158,22 @@
 				25073B5A1CD051CB008BEE24 /* Info.plist */,
 			);
 			path = XMPopSubViewUITests;
+			sourceTree = "<group>";
+		};
+		25073B6C1CD05348008BEE24 /* XMPopView */ = {
+			isa = PBXGroup;
+			children = (
+				25073B6D1CD05348008BEE24 /* sr_bg_mask@2x.png */,
+				25073B6E1CD05348008BEE24 /* UIView+Frame.h */,
+				25073B6F1CD05348008BEE24 /* UIView+Frame.m */,
+				25073B701CD05348008BEE24 /* XMBlurView.h */,
+				25073B711CD05348008BEE24 /* XMBlurView.m */,
+				25073B721CD05348008BEE24 /* XMPopSubview.h */,
+				25073B731CD05348008BEE24 /* XMPopSubview.m */,
+				25073B741CD05348008BEE24 /* XMPopViewContainer.h */,
+				25073B751CD05348008BEE24 /* XMPopViewContainer.m */,
+			);
+			path = XMPopView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +281,7 @@
 			files = (
 				25073B431CD051CB008BEE24 /* LaunchScreen.storyboard in Resources */,
 				25073B401CD051CB008BEE24 /* Assets.xcassets in Resources */,
+				25073B761CD05348008BEE24 /* sr_bg_mask@2x.png in Resources */,
 				25073B3E1CD051CB008BEE24 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,8 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25073B7A1CD05348008BEE24 /* XMPopViewContainer.m in Sources */,
+				25073B771CD05348008BEE24 /* UIView+Frame.m in Sources */,
 				25073B3B1CD051CB008BEE24 /* ViewController.m in Sources */,
+				25073B791CD05348008BEE24 /* XMPopSubview.m in Sources */,
+				25073B781CD05348008BEE24 /* XMBlurView.m in Sources */,
 				25073B381CD051CB008BEE24 /* AppDelegate.m in Sources */,
+				25073B7D1CD06278008BEE24 /* XMTestNormalView.m in Sources */,
 				25073B351CD051CB008BEE24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +540,7 @@
 				25073B5F1CD051CB008BEE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25073B601CD051CB008BEE24 /* Build configuration list for PBXNativeTarget "XMPopSubViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +549,7 @@
 				25073B621CD051CB008BEE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25073B631CD051CB008BEE24 /* Build configuration list for PBXNativeTarget "XMPopSubViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +558,7 @@
 				25073B651CD051CB008BEE24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
