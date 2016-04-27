@@ -27,6 +27,7 @@ static CGFloat kLineHeight = 1.0f;
     UIView *_topCutLine;
     UIView *_bottomCutLine;
     UIButton *_cancelButton;
+    
 }
 
 
