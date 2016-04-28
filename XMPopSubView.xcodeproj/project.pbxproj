@@ -21,6 +21,9 @@
 		25073B791CD05348008BEE24 /* XMPopSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B731CD05348008BEE24 /* XMPopSubview.m */; };
 		25073B7A1CD05348008BEE24 /* XMPopViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B751CD05348008BEE24 /* XMPopViewContainer.m */; };
 		25073B7D1CD06278008BEE24 /* XMTestNormalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B7C1CD06278008BEE24 /* XMTestNormalView.m */; };
+		253930041CD1BA4F00443A0C /* XMTestScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 253930031CD1BA4F00443A0C /* XMTestScrollview.m */; };
+		253930071CD1F43D00443A0C /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 253930051CD1F43D00443A0C /* image_1.jpg */; };
+		253930081CD1F43D00443A0C /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 253930061CD1F43D00443A0C /* image_2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,10 @@
 		25073B751CD05348008BEE24 /* XMPopViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPopViewContainer.m; sourceTree = "<group>"; };
 		25073B7B1CD06278008BEE24 /* XMTestNormalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestNormalView.h; sourceTree = "<group>"; };
 		25073B7C1CD06278008BEE24 /* XMTestNormalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestNormalView.m; sourceTree = "<group>"; };
+		253930021CD1BA4F00443A0C /* XMTestScrollview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMTestScrollview.h; sourceTree = "<group>"; };
+		253930031CD1BA4F00443A0C /* XMTestScrollview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMTestScrollview.m; sourceTree = "<group>"; };
+		253930051CD1F43D00443A0C /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
+		253930061CD1F43D00443A0C /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +137,8 @@
 				25073B331CD051CB008BEE24 /* Supporting Files */,
 				25073B7B1CD06278008BEE24 /* XMTestNormalView.h */,
 				25073B7C1CD06278008BEE24 /* XMTestNormalView.m */,
+				253930021CD1BA4F00443A0C /* XMTestScrollview.h */,
+				253930031CD1BA4F00443A0C /* XMTestScrollview.m */,
 			);
 			path = XMPopSubView;
 			sourceTree = "<group>";
@@ -137,6 +146,8 @@
 		25073B331CD051CB008BEE24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				253930051CD1F43D00443A0C /* image_1.jpg */,
+				253930061CD1F43D00443A0C /* image_2.jpg */,
 				25073B341CD051CB008BEE24 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -279,7 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253930071CD1F43D00443A0C /* image_1.jpg in Resources */,
 				25073B431CD051CB008BEE24 /* LaunchScreen.storyboard in Resources */,
+				253930081CD1F43D00443A0C /* image_2.jpg in Resources */,
 				25073B401CD051CB008BEE24 /* Assets.xcassets in Resources */,
 				25073B761CD05348008BEE24 /* sr_bg_mask@2x.png in Resources */,
 				25073B3E1CD051CB008BEE24 /* Main.storyboard in Resources */,
@@ -313,6 +326,7 @@
 				25073B791CD05348008BEE24 /* XMPopSubview.m in Sources */,
 				25073B781CD05348008BEE24 /* XMBlurView.m in Sources */,
 				25073B381CD051CB008BEE24 /* AppDelegate.m in Sources */,
+				253930041CD1BA4F00443A0C /* XMTestScrollview.m in Sources */,
 				25073B7D1CD06278008BEE24 /* XMTestNormalView.m in Sources */,
 				25073B351CD051CB008BEE24 /* main.m in Sources */,
 			);

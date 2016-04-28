@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "XMTestNormalView.h"
+#import "XMTestScrollview.h"
 
 @interface ViewController ()
 
@@ -36,6 +37,16 @@
     autoHeightView.autoSizeWithSubFrame = YES;
     autoHeightView.frame = CGRectMake(0, 0, self.view.frame.size.width, arc4random() % 300);
     [autoHeightView showWithAnimate:YES];
+}
+
+
+-(IBAction)showTestScrollView:(id)sender{
+
+    XMTestScrollview *testScrollView = [[XMTestScrollview alloc] initWithController:self title:@"测试滚动视图"];
+    testScrollView.frame = CGRectMake(0, 0,  self.view.frame.size.width, 130);
+    testScrollView.autoSizeWithSubFrame = YES;
+    [testScrollView showWithAnimate:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {
