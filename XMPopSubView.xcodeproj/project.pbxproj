@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2505A0C9215DC55F0078BBA8 /* XMPopListSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 2505A0C7215DC55F0078BBA8 /* XMPopListSubview.m */; };
 		25073B351CD051CB008BEE24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B341CD051CB008BEE24 /* main.m */; };
 		25073B381CD051CB008BEE24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B371CD051CB008BEE24 /* AppDelegate.m */; };
 		25073B3B1CD051CB008BEE24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25073B3A1CD051CB008BEE24 /* ViewController.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2505A0C7215DC55F0078BBA8 /* XMPopListSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPopListSubview.m; sourceTree = "<group>"; };
+		2505A0C8215DC55F0078BBA8 /* XMPopListSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPopListSubview.h; sourceTree = "<group>"; };
 		25073B301CD051CB008BEE24 /* XMPopSubView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPopSubView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25073B341CD051CB008BEE24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25073B361CD051CB008BEE24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 		25073B6C1CD05348008BEE24 /* XMPopView */ = {
 			isa = PBXGroup;
 			children = (
+				2505A0C8215DC55F0078BBA8 /* XMPopListSubview.h */,
+				2505A0C7215DC55F0078BBA8 /* XMPopListSubview.m */,
 				25073B6D1CD05348008BEE24 /* sr_bg_mask@2x.png */,
 				25073B6E1CD05348008BEE24 /* UIView+Frame.h */,
 				25073B6F1CD05348008BEE24 /* UIView+Frame.m */,
@@ -326,6 +331,7 @@
 				25073B791CD05348008BEE24 /* XMPopSubview.m in Sources */,
 				25073B781CD05348008BEE24 /* XMBlurView.m in Sources */,
 				25073B381CD051CB008BEE24 /* AppDelegate.m in Sources */,
+				2505A0C9215DC55F0078BBA8 /* XMPopListSubview.m in Sources */,
 				253930041CD1BA4F00443A0C /* XMTestScrollview.m in Sources */,
 				25073B7D1CD06278008BEE24 /* XMTestNormalView.m in Sources */,
 				25073B351CD051CB008BEE24 /* main.m in Sources */,
