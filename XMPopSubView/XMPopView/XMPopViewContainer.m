@@ -16,9 +16,6 @@
 #define LSTR(str)       NSLocalizedString(str, nil)
 #define kOnePixelsLineHeight        1/[UIScreen mainScreen].scale
 
-#define XMDEVICE_SCREEN_HAS_LENGTH(_frame, _length) ( fabs( MAX(CGRectGetHeight(_frame), CGRectGetWidth(_frame)) - _length) < DBL_EPSILON )
-#define XMDEVICE_IS_IPHONE_X XMDEVICE_SCREEN_HAS_LENGTH([UIScreen mainScreen].bounds, 812.)  //!< 判断设备是否是iPhone X
-
 static CGFloat kNormalHeight  = 50.0f;
 static CGFloat kLineHeight = 1.0f;
 
@@ -255,7 +252,24 @@ static CGFloat kLineHeight = 1.0f;
 
 + (CGFloat)safeAreaBottomInset
 {
-	return XMDEVICE_IS_IPHONE_X ? 34 : 0;
+	return isIPhoneX() ? 34 : 0;
 }
 
+static inline BOOL isIPhoneX() {
+	BOOL iPhoneX = NO;
+	/// 先判断设备是否是iPhone/iPod
+	if (UIDevice.currentDevice.userInterfaceIdiom != UIUserInterfaceIdiomPhone) {
+		return iPhoneX;
+	}
+	
+	if (@available(iOS 11.0, *)) {
+		/// 利用safeAreaInsets.bottom > 0.0来判断是否是iPhone X。
+		UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+		if (mainWindow.safeAreaInsets.bottom > 0.0) {
+			iPhoneX = YES;
+		}
+	}
+	
+	return iPhoneX;
+}
 @end

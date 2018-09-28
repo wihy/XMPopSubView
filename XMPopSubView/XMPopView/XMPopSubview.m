@@ -50,19 +50,19 @@
     self.popContainer.autoSizeWithSubFrame = self.autoSizeWithSubFrame;
 	
 	//判断操作
-	if (self.style & XMPopSubviewStyle_hideAll) {
+	if (self.style == XMPopSubviewStyle_hideAll) {
 		self.popContainer.hideTitle = YES;
 		self.popContainer.hideCancelBtn = YES;
 	}
-	else if (self.style & XMPopSubviewStyle_hideTitle) {
+	else if (self.style == XMPopSubviewStyle_hideTitle) {
 		self.popContainer.hideTitle = YES;
 		self.popContainer.hideCancelBtn = NO;
 	}
-	else if (self.style & XMPopSubviewStyle_hideCancelBtn) {
+	else if (self.style == XMPopSubviewStyle_hideCancelBtn) {
 		self.popContainer.hideTitle = NO;
 		self.popContainer.hideCancelBtn = YES;
 	}
-	else if (self.style & XMPopSubviewStyle_noHide) {
+	else if (self.style == XMPopSubviewStyle_noHide) {
 		self.popContainer.hideTitle = NO;
 		self.popContainer.hideCancelBtn = NO;
 	}
